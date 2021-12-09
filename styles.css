@@ -1,5 +1,5 @@
 /*Maak hier jouw CSS!*/
-/* deze is voor de mobile*/
+/* deze is voor de mobile */
 .container{
     background-color: #7A7978;
     display: grid;
@@ -53,7 +53,7 @@
     background-color: #2708A0;
     grid-area: aside3;
 }
-
+/* deze is voor de desktop */
 @media screen and (min-width: 576px) {
     .container {
         background-color: #7A7978;
