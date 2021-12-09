@@ -1,17 +1,19 @@
 /*Maak hier jouw CSS!*/
-/* deze is voor de desktop*/
+/* deze is voor de mobile*/
 .container{
     background-color: #7A7978;
     display: grid;
     grid-gap: 16px;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 50px 240px 100px auto 50px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px auto 50px 50px 50px 50px;
     grid-template-areas:
-            "header aside1 aside1"
-            "main aside1 aside1"
-            "main aside2 aside3"
-            "main aside2 ."
-            "footer footer footer";
+            "header"
+            "main"
+            "aside1"
+            "aside2"
+            "aside3"
+            "..."
+            "footer";
 }
 
 .grid-item{
@@ -19,6 +21,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    padding: 15px;
 }
 
 #header{
@@ -49,4 +52,20 @@
 #aside3{
     background-color: #2708A0;
     grid-area: aside3;
+}
+
+@media screen and (min-width: 576px) {
+    .container {
+        background-color: #7A7978;
+        display: grid;
+        grid-gap: 16px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 50px 240px 100px auto 50px;
+        grid-template-areas:
+            "header aside1 aside1"
+            "main aside1 aside1"
+            "main aside2 aside3"
+            "main aside2 ."
+            "footer footer footer";
+    }
 }
